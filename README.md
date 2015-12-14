@@ -36,7 +36,7 @@ I find it easier to always create a repository on GitHub and clone it to my loca
 1. create the repo on GitHub (or create a fork...depends on the course and project you are working on)
 2. copy the repo https address (for use in your git bash on your local machine). Here is an image of what I'm talking about off a repo on GitHub:
 
-![github repo page](figureA.jpg)
+![github repo page](./figureA.JPG)
 
 3. open up your git bash shell and navigate to whereever you wish to put your new repo folder
 4. type the following:
