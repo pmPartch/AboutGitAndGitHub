@@ -14,6 +14,8 @@
 
 A book that I've found useful: *Version Control with Git*  by Jon Loeliger (first 88 pages)
 
+And there is also the GitHub self paced training: [Start Learning Git and GitHub Today with Self-Paced Training](https://github.com/blog/2083-start-learning-git-and-github-today-with-self-paced-training)
+
 ### My invironment
 I'm using Windows 7 and currently use R version 3.2.3.
 
