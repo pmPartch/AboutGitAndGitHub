@@ -43,7 +43,16 @@ I find it easier to always create a repository on GitHub and clone it to my loca
 ```
 git clone <paste your https address from step b here>
 ```
-5. Now you can just copy,paste files to his new folder on your local machine.
+so an explicit example of this would be when I setup my local clone of the repository you are currently looking at:
+```
+ git clone git@github.com:pmPartch/AboutGitAndGitHub.git
+```
+
+5. You can now change to this directory by typeing cd <new repro name> like so:
+```
+ cd AboutGitAndGitHub/
+```
+6. Now you can just copy,paste files to his new folder on your local machine.
 6. you will need to add these new files to your local git repo like so:
 ```
 git add .
