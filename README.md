@@ -6,20 +6,20 @@
 
 ### some basic training and books that I've used in the past
 
-[www.pluralshight.com](www.pluralsight.com) has some on-line training for Git and GitHub (and they offer a free 10 day trail so you can so all of these if you wish)
+[www.pluralshight.com](www.pluralsight.com) has some on-line training for Git and GitHub (and they offer a free 10 day trail so you can view all of these if you wish)
 
 * Introduction to Git
 * Git Fundamentals
 * GitHub for Windows Developers
 
-A book that I've found useful: *Version Control with Git*  by Jon Loeliger (first 88 pages)
+A book that I've found useful: *Version Control with Git*  by Jon Loeliger (first 88 pages covers the basics very well)
 
 And there is also the GitHub self-paced training: [Start Learning Git and GitHub Today with Self-Paced Training](https://github.com/blog/2083-start-learning-git-and-github-today-with-self-paced-training)
 
 ### My environment
 I'm using Windows 7 and currently use R version 3.2.3.
 
-I've also install GitHub Desktop (https://desktop.github.com/) but make use of the bash shell (see more about this below)
+I've also install GitHub Desktop (https://desktop.github.com/) but make use of the bash shell (see more about this below). I install this for the git bash shell (I had issues with other bash shells for Windows and this one worked for me...but keep in mind that I installed this back in 2014 so there may be other options available now). Now. you might be wondering why I'm using a bash shell instead of the GUI provided by this utility. Well, you might notice that if you ask any questions bout Git on the web, your answer will most likely be in the form of some sort of shell invocations...so I would suggest you get used to using the bash shell (my 2 cents of wisdom)
 
 ### Basic Steps (for getting some files up to GitHub)
 
