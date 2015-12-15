@@ -2,7 +2,7 @@
 
 ## Basic instructions for the newbie Git user
 
-**disclaimer**: I'm offering this page as some guidence to those just starting off with Git and GitHub. I'm not an expert (just a student like yourself). 
+**disclaimer**: I'm offering this page as some guidance to those just starting off with Git and GitHub. I'm not an expert (just a student like yourself). 
 
 ### some basic training and books that I've used in the past
 
@@ -14,9 +14,9 @@
 
 A book that I've found useful: *Version Control with Git*  by Jon Loeliger (first 88 pages)
 
-And there is also the GitHub self paced training: [Start Learning Git and GitHub Today with Self-Paced Training](https://github.com/blog/2083-start-learning-git-and-github-today-with-self-paced-training)
+And there is also the GitHub self-paced training: [Start Learning Git and GitHub Today with Self-Paced Training](https://github.com/blog/2083-start-learning-git-and-github-today-with-self-paced-training)
 
-### My invironment
+### My environment
 I'm using Windows 7 and currently use R version 3.2.3.
 
 I've also install GitHub Desktop (https://desktop.github.com/) but make use of the bash shell (see more about this below)
@@ -40,7 +40,7 @@ I find it easier to always create a repository on GitHub and clone it to my loca
 
 ![github repo page](./figureA.JPG)
 
-3. open up your git bash shell and navigate to whereever you wish to put your new repo folder
+3. open up your git bash shell and navigate to wherever you wish to put your new repo folder
 4. type the following:
 ```
 git clone <paste your https address from step b here>
@@ -50,11 +50,11 @@ so an explicit example of this would be when I setup my local clone of the repos
  git clone git@github.com:pmPartch/AboutGitAndGitHub.git
 ```
 
-5. You can now change to this directory by typeing cd <new repro name> like so:
+5. You can now change to this directory by typing cd <new repo name> like so:
 ```
  cd AboutGitAndGitHub/
 ```
-6. Now you can just copy,paste files to his new folder on your local machine.
+6. Now you can just copy, paste files to his new folder on your local machine.
 6. you will need to add these new files to your local git repo like so:
 ```
 git add .
@@ -67,7 +67,7 @@ git commit -m "Initial Revision"
 ```
 git push
 ```
-NOTE: I've found using the status command very useful in keeping track of what is going on (and what I might have missed). So you might want to periodicly type this:
+NOTE: I've found using the status command very useful in keeping track of what is going on (and what I might have missed). So you might want to periodically type this:
 ```
 git status
 ```
@@ -75,3 +75,16 @@ git status
 Some basic notes about Git. It does not really care much about file names. It is looking at file contents.
 So if you have already added a file foo.txt and you have changed foo.txt, you will need to 
 add it again (since you are asking git to update your repo with new file contents)
+
+An extreme example of this: say I have file A.txt, B.txt , C.txt and all three files have the same identical content. I then add all three to my Git repo like so (using wild card for the file name):
+```
+git add ?.txt
+```
+Now I commit all three files like so:
+```
+git commit m="Initial Revision"
+```
+What has now happened (at least in my mind) is that Git has saved a single copy of the file contexts and setup a dictionary to map the three file names to the single contents.
+But what happens if you modify a single file, say B.txt? Well, git performs a copy-on-change so when you do modify a single file it will now need to make a copy where A.txt and C.txt refer to the original contents and B.txt refers to the new contents.
+
+
